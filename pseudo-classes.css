@@ -1,0 +1,40 @@
+li {
+    display: inline-block;
+    list-style: none;
+}
+span {
+    display: block;
+    border: 1px solid black;
+    margin: 25px;
+}
+.n-child section:nth-of-type(even){
+    border: 1px solid red;
+}
+ul .block::after {
+    content: ",";
+    display: inline;
+}
+.n-type section:nth-of-type(odd){
+    color: blue;
+}
+.first-of-type aside:nth-of-type(1){
+    background-color: lime;
+
+}
+.first-of-type section:nth-of-type(1){
+    background-color: purple;
+}
+.three section {
+    background-color: orange;
+}
+.three :nth-last-child(1){
+    background-color: darkslategrey;
+}
+article :nth-child(1)::before{
+    content: "Article parent element";
+    display: block;
+    background-color: royalblue;
+    border: 3px dashed grey;
+    width: auto;
+
+}
